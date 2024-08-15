@@ -1,0 +1,85 @@
+/* 
+--yellow: hsl(47, 88%, 63%);
+
+- White: hsl(0, 0%, 100%)
+
+- Gray 500: hsl(0, 0%, 42%)
+- Gray 950: hsl(0, 0%, 7%)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --yellow: #f5d14f;
+    --white: #ffffff;
+    --gray-one: #6b6b6b;
+    --black: #121212;
+}
+
+.d-f {
+    display: flex;
+}
+
+body {
+    background-color: var(--yellow);
+    font-family: "Figtree", sans-serif;
+}
+
+.card {
+    width: 20%;
+    margin: 4rem auto;
+    padding: 1.5rem;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    box-shadow: 0.5rem 0.5rem 0 0 black, 0.5rem 0.5rem 0 1px black;
+}
+
+.img-container {
+    width: 100%;
+}
+
+.img-container > img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+#highlight {
+    padding: 0.50rem;
+    background-color: var(--yellow);
+    border-radius: 0.25rem;
+    display: inline-block;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.title {
+    font-size: 1.50rem;
+    color: var(--black);
+}
+
+.title:hover {
+    color: var(--yellow);
+}
+
+p {
+    color: var(--gray-one);
+}
+
+#writer {
+    align-items: center;
+    gap: 0.50rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .card {
+        width: 80%;
+    }
+}
